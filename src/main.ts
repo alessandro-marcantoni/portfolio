@@ -1,10 +1,5 @@
-import App from './App.svelte'
-import './style/bootstrap.css'
-import './style/debug.css'
-import './style/style.css'
+import "@assets/main.css";
 
-const app = new App({
-  target: document.getElementById('app'),
-})
+import { main } from "./app.gleam";
 
-export default app
+document.addEventListener("DOMContentLoaded", main)
